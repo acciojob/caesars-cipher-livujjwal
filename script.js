@@ -1,5 +1,3 @@
-
-
 const lookup = {
   A: "N",
   B: "O",
@@ -40,8 +38,8 @@ for (let i = 0; i < encodedStr.length; i++) {
 	decodedArr[i] = lookup[encodedStr[i]];
 	}else{
 		
-	}
 	decodedArr[i] = encodedStr[i];
+	}
 }
   return decodedArr; //return decodedArr
 }
