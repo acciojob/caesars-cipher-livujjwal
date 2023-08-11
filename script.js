@@ -1,4 +1,4 @@
-// Your Script here.
+
 
 const lookup = {
   A: "N",
@@ -34,13 +34,15 @@ const lookup = {
 function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
-
-  return; //return decodedArr
+for (let i = 0; i < encodedSt.length; i++) {
+	decodedArr[i] = lookup[encodedStr[i]];
+}
+  return decodedArr; //return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
 // console.log(rot13("SERR YBIR? NPPVBWBO"));
-
+alert(rot13("RAM"));
 // Do not change this line
 window.rot13 = rot13;
